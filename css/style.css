@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main   {
+    background-image:
+    linear-gradient(
+        to right, #30cfd033,#33086733
+    ),
+     url(../image/background.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+.main h2{
+      font-size: 36px;
+      line-height: 60px;
+      font-weight: bold;
+      color: white;
+      font-weight: 600;
+      padding-bottom: 50px;
+      text-align: center;
+
+}
+.main h3{
+    font-size: 25px;
+    line-height: 42px;
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+    border: 1px solid rgba(255, 255, 255, .1);  
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, .1);  
+    padding: 10px;
+}
+.nav{
+  padding: 40px 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .1);
+  backdrop-filter: blur(3px);
+  transition: all 0.5s;  
+
+}
+.tab-content{
+  padding: 50px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .1);
+  backdrop-filter: blur(3px);
+  transition: all 0.5s;  
+}
+
+.btn {
+    padding: 20px 35px;
+    font-size: 15px;
+    font-weight: 500;
+    background-image: linear-gradient(
+      to right,
+      #f55f8d 0,
+      #f8ae56 51%,
+      #f55f8d 100%
+    );
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-size: 200%;
+    transition: all 0.5s;
+    margin-top: 20px;
+  }
+  .btn:hover {
+    background-position: right center;
+    color: white;
+  }
+
+  .mb-3 label{
+    line-height: 1.1;
+    font-weight: 800;
+    color: #e054a3;
+    padding: 5px;
+  }
+
+  /* bai 2 */
+.mb-3 .bai2{
+    border-radius:20px ;
+    padding: 5px;
+    border: 1px solid #e054a3;
+}
+
+.center{
+    padding: 50px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(3px);
+    transition: all 0.5s;  
+    opacity: 1;
+}
+
+.nav-link{
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    background-image: linear-gradient(
+      to right,
+      #f55f8d 0,
+      #f8ae56 51%,
+      #f55f8d 100%
+    );
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-size: 200%;
+    transition: all 0.5s;
+    margin-top: 20px;
+}
+
+.nav-link:hover{
+    background-position: right center;
+    color: whitesmoke;
+}

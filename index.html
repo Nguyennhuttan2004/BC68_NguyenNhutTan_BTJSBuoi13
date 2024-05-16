@@ -16,26 +16,181 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link src="./css/style.css" rel="stylesheet" href="">
+        <!-- FontAwesome 6.2.0 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        
+        <!-- (Optional) Use CSS or JS implementation -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+            integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
 
     <body>
-        <div class="d-flex align-items-start">
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-              <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
-              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-            </div>
-            <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
-            </div>
-          </div>
+        <div class="main">
+            <div class="container ">
+                <div class="center">
+                    <div class="d-flex align-items-start  ">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-heart"></i>Bài 1</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" ><i class="fa-solid fa-bomb"></i>Bài 2</button>
+                          <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled"><i class="fa-solid fa-ghost"></i>Bài 3</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"><i class="fa-solid fa-fire"></i>Bài 4</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" ><i class="fa-brands fa-airbnb"></i>Bài 5</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <h2>Tính tiền lương nhân viên</h2>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Lương 1 Ngày</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="luongMotNgay"
+                                    placeholder="Nhập lương 1 ngày của bạn "
+                                />
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="" class="form-label">Số ngày làm:</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="soNgayLam"
+                                    placeholder="Nhập số ngày làm của bạn"
+                                />
+                            </div>
+                            <button class="btn " id="btnLuong">Click vào đây nè chị Giao ơi !!!</button>
+                            <div id="divTienLuong" class="dongia">
+                                <h3>
+                                  Tiền lương của bạn là: <span id="xuatLuong" class="xuatLuong">  </span>
+                                </h3>
+                              </div>
+                            
+            
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <h2>Tính trung bình cộng</h2>
+                            <div class="container">
+                                <div class="mb-3">
+                                    <label for="soThu1">Số thứ 1:</label>
+                                    <input class="bai2" type="number" id="soThu1" value="0">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="soThu2">Số thứ 2:</label>
+                                    <input class="bai2" type="number" id="soThu2" value="0">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="soThu3">Số thứ 3:</label>
+                                    <input class="bai2" type="number" id="soThu3" value="0">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="soThu4">Số thứ 4:</label>
+                                    <input class="bai2" type="number" id="soThu4" value="0">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="soThu5">Số thứ 5:</label>
+                                    <input type="number" id="soThu5" value="0">
+                                </div>
+                                <button class="btn " id="btnTBC">Click vào đây nè chị Giao ơi !!!</button>
+                                <div id="divTBC" class="dongia">
+                                    <h3>
+                                      Số trung bình cộng là: <span id="xuatTBC" class="xuatTBC">  </span>
+                                    </h3>
+                                  </div>
+                          </div>
+                         
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                            <h2>Quy Đổi Tiền Tệ</h2>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Nhập số tiền USD</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="quyDoiTien"
+                                    placeholder="Nhập số tiền USD"
+                                />
+                            </div>
+                            <button class="btn " id="btnTienQD">Click vào đây nè chị Giao ơi !!!</button>
+                            <div id="divTienQD" class="dongia">
+                                <h3>
+                                  số tiền đc quy đổi là: <span id=" " class="xuatTienQD">  </span>
+                                </h3>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <h2>Tinhs Chu Vi và Diện Tích</h2>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Nhập chiều dài</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="chieuDai"
+                                    placeholder="Nhập chiều dài "
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Nhập chiều rộng</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="chieuRong"
+                                    placeholder="Nhập chiều rộng "
+                                />
+                            </div>
+                            <button class="btn " id="btnTinh">Click vào đây nè chị Giao ơi !!!</button>
+                            <div id="divTinh" class="dongia">
+                                <h3>
+                                   Diện tích là: <span id="dienTich" class="dienTich"> hehe </span>
+                                </h3>
+                              </div>
+                              <div id="divTinh" class="dongia">
+                                <h3>
+                                  Chu vi là: <span id="chuVi" class="chuVi">hehe  </span>
+                                </h3>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <h2>Tính Tổng 2 Ký Số</h2>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Nhập 1 số có 2 chữ số</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="input"
+                                    placeholder="Nhập 1 số có 2 chữ số"
+                                />
+                            </div>
+                            <button class="btn " id="btnTong">Click vào đây nè chị Giao ơi !!!</button>
+                            <div id="divTong" class="dongia">
+                                <h3>
+                                 <span id="xuatTong" class="xuatTong">  </span>
+                                </h3>
+                              </div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+              
+        </div>
+      
 
 
       
